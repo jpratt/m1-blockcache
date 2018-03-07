@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Iuvo_BlockCache>
+            <version>0.1.0</version>
+        </Iuvo_BlockCache>
+    </modules>
+    <global>
+		<models>
+            <blockcache>
+                <class>Iuvo_BlockCache_Model</class>
+            </blockcache>
+        </models>
+	</global>
+	<adminhtml>
+        <events>
+            <controller_action_postdispatch_adminhtml_catalog_product_save>
+                <observers>
+                    <blockcache>
+                        <class>blockcache/observer</class>
+                        <method>clearBlockCache</method>
+                    </blockcache>
+                </observers>
+            </controller_action_postdispatch_adminhtml_catalog_product_save>
+        </events>
+    </adminhtml>
+</config>

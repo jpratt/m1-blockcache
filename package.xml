@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>BlockCache</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>Iuvo Commercial Extension</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Get rid of the annoying One or more of the Cache Types are invalidated: Blocks HTML output issues.</summary>
+    <description>Get rid of the annoying One or more of the Cache Types are invalidated: Blocks HTML output issues. This will give the option of flushing the block cache when catalog changes are made instead of the invalidation method. You can toggle it on or off.</description>
+    <notes>See site for details</notes>
+    <authors><author><name>Justin Pratt</name><user>iuvocommerce</user><email>sales@iuvocommerce.com</email></author></authors>
+    <date>2012-03-06</date>
+    <time>01:48:30</time>
+    <contents><target name="magecommunity"><dir name="Iuvo"><dir name="BlockCache"><dir name="Model"><file name="Observer.php" hash="9be19a75f3aee018139e40e3114921fa"/></dir><dir name="etc"><file name="adminhtml.xml" hash="1da65acd1bc2dd3838c5ca7138f2d286"/><file name="config.xml" hash="614bef5e98524023c9a4032e50e34dac"/><file name="system.xml" hash="27913aee9c75a06024402c715a501f4a"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Iuvo_BlockCache.xml" hash="ad4cbbe1f00dfea9c3f4e2ee310b70c7"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
